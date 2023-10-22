@@ -1,0 +1,122 @@
+
+
+/* Oli pakko tehä "dark mode" ku meinas tulla migreeni :( */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 5%;
+    height: 100%;
+    background-color: rgb(57, 57, 57);
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    left: 10%;
+}
+
+#otsikko {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    color: bisque;
+}
+
+#todoForm {
+    margin-bottom: 20px;
+}
+
+#todoForm button {
+    color: black;
+    background-color: bisque;
+    font-weight: bold;
+}
+
+#todoInput {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#todoLista li {
+    margin-bottom: 10px;
+    color:bisque;
+}
+
+.completed {
+    text-decoration: line-through;
+    text-decoration-color: black !important;     
+    text-decoration-thickness: 3px;
+}
+
+#todoLista li button{
+    color: black;
+    background-color: bisque;
+    font-weight: bold;
+
+}
+
+
+
+.error {
+    border: 3px solid #ff9f98;
+}
+
+#error-message {
+    color: #ff9f98 !important;
+}
+
+
+
+/* Alleviivaa elementin yläpuolella */
+li.drag-over-top {
+    border-top: 2px solid bisque;
+    border-bottom: none;
+}
+
+/* Alleviivaa elementin alapuolella */
+li.drag-over-bottom {
+    border-bottom: 2px solid bisque;
+    border-top: none;
+}
+
+#ohjeita {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#filters button {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+
+}
+
+#filtteriPoista button {
+    background-color: #ff9f98; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+
+}
+
+#toggleOhjeita {
+    background-color: #ff9f98;
+    color: black;
+    font-weight: bold;
+}
+
+#ohjeita {
+    color: bisque;
+}
+
+#valinnat {
+    color: rgb(255, 240, 222);
+}
+
+#task-counter {
+    font-size: 18px;
+    margin-top: 10px;
+    color:bisque
+}
