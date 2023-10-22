@@ -1,9 +1,61 @@
 <!DOCTYPE html>
-<html>
+
+<!-- En usko että tänne tarvii mitään kommentointia, mutta hello from the other side :) -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-sovellus</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
+    <div id="otsikko">
+    <h1>Samin extra magee TODO-sovellus</h1><br>
+    </div>
+    <div id="app">
+        
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Lisää tehtävä">
+            
+            <button type="submit">Lisää</button>
+            <br>
+            <span id="error-message" style="color: red;"></span>
+        </form>
+        <ul id="todoLista"></ul>
+        <br>
+        <div id="task-counter">0/0 tehty</div>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+        <h3 id="valinnat"><br>Valintoja:</h3>
+        <div id="filters">
+            <button onclick="filterTodos('all')">Näytä kaikki</button>
+            <button onclick="filterTodos('active')">Näytä aktiiviset</button>
+            <button onclick="filterTodos('completed')">Näytä valmiit</button>
+            <br><br>
+            <div id="filtteriPoista">
+                <button onclick="deleteTodos('all')">Poista kaikki</button>
+                <button onclick="deleteTodos('active')">Poista aktiiviset</button>
+                <button onclick="deleteTodos('completed')">Poista valmiit</button>
+            </div>
+            
+        </div>
+        </div>
 
+        <br><br><br><br><br>
+        <button id="toggleOhjeita">Ohjeita</button>
+        <div id="ohjeita" style="display: none;">
+            <p>Voit vetää listan tehtäviä eri kohtiin. <br><br>
+                Klikkaamalla tehtäviä saat ruksattuu ne yli ja <br>
+                sitten ne menee completed luokkaan mitä voi filtteröidä<br>
+                tai poistaa kaikki tehdyt kerralla. <br><br>
+                Pidä hauskaa.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
