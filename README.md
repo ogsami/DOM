@@ -1,4 +1,4 @@
-Koodin kanssa auttoi chatgpt, www.w3schools.com ja stackoverflow.com
+Koodin kanssa auttoi chatgpt, www.w3schools.com ja www.stackoverflow.com
 
 
 Muut lähteet:
